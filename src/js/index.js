@@ -69,7 +69,7 @@ function listWork(work) {
                 <div><img src="${work[i].img}" alt="" class="md:w-[260px] md:h-[180px] rounded-lg ">
                 </div>
                 <div class="">
-                    <a href="" class="md:text-2xl text-3xl font-bold">${work[i].name}</a>
+                    <a href="./detail.html?id=${ND.id}" class="md:text-2xl text-3xl font-bold">${work[i].name}</a>
                     <div class="flex space-x-4 items-center my-6">
                         <span class="inline-block text-white bg-black py-1 px-2 rounded-full font-bold">${work[i].year}</span>
                         <span class="text-[#8695A4]">Dashboard</span>
