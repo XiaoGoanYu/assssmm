@@ -1,3 +1,4 @@
+const id = new URLSearchParams(window.location.search).get("id");
 const title = {
     name: "Blog"
 };
@@ -63,3 +64,6 @@ function render(elementId, content) {
 }
 render("title", listTitle(title));
 render("ND", listND(ND));
+const found = products.find(function(element) {
+    return element.id == id
+});

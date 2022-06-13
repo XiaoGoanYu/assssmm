@@ -1,3 +1,4 @@
+const id = new URLSearchParams(window.location.search).get("id");
 const user = {
     id: 1,
     name: "Hi, I am John",
@@ -97,3 +98,6 @@ function render(elementId, content) {
 render("user", listUser(user));
 render("work", listWork(work));
 render("c2", listC2(c2));
+const found = products.find(function(element) {
+    return element.id == id
+});
