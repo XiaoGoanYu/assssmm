@@ -15,7 +15,7 @@ const work = [{
         name: "Designing Dashboards",
         year: "2020",
         description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        img: "img/Rectangle 30.jpg"
+        img: "https://res.cloudinary.com/s-ndz/image/upload/v1655088932/img/Rectangle_30_iwaafw.jpg"
     },
     {
 
