@@ -1,5 +1,3 @@
-const id = new URLSearchParams(window.location.search).get("id");
-
 const first = {
     name: "Designing Dashboards with usability in mind",
     year: "2020",
@@ -63,6 +61,3 @@ function render(elementId, content) {
     }
 
 }
-const found = products.find(function(element) {
-    return element.id == id
-});

@@ -1,4 +1,3 @@
-const id = new URLSearchParams(window.location.search).get("id");
 const user = {
     id: 1,
     name: "Hi, I am John",
@@ -38,8 +37,6 @@ const work = [{
 
 
 function listUser(user) {
-
-
     let flag = `<div class="max-w-6xl mx-auto px-6 mt-32">
     <div class="md:grid-cols-2 grid ml-7">
         <div class="col-span-1 order-2 md:order-1 text-center md:text-left">
@@ -69,7 +66,7 @@ function listWork(work) {
                 <div><img src="${work[i].img}" alt="" class="md:w-[260px] md:h-[180px] rounded-lg ">
                 </div>
                 <div class="">
-                    <a href="./detail.html?id=${ND.id}" class="md:text-2xl text-3xl font-bold">${work[i].name}</a>
+                    <a href="" class="md:text-2xl text-3xl font-bold">${work[i].name}</a>
                     <div class="flex space-x-4 items-center my-6">
                         <span class="inline-block text-white bg-black py-1 px-2 rounded-full font-bold">${work[i].year}</span>
                         <span class="text-[#8695A4]">Dashboard</span>
@@ -98,6 +95,3 @@ function render(elementId, content) {
 render("user", listUser(user));
 render("work", listWork(work));
 render("c2", listC2(c2));
-const found = products.find(function(element) {
-    return element.id == id
-});
